@@ -1,9 +1,9 @@
-console.log(exo11([10, 20]));
-function exo11(t) {
-  let res = 0;
+console.log(exo12([10, 20, -2]));
+function exo12(t) {
+  let res = [];
   for (let index = 0; index < t.length; index++) {
     const number = t[index];
-    res += number;
+    if (number >= 0) res.push(number);
   }
-  return res / t.length;
+  return res;
 }
