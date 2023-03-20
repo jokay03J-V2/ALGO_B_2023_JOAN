@@ -1,9 +1,9 @@
-console.log(exo6());
+console.log(exo7());
 
-function exo6() {
-  let res = 0;
+function exo7() {
+  let res = 1;
   for (let index = 1; index <= 10; index++) {
-    res += index;
+    res *= index;
   }
 
   return res;
