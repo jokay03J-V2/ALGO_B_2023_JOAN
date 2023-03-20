@@ -1,14 +1,10 @@
-exo4();
+console.log(exo6());
 
-function exo4() {
-  let res = "";
-  for (let indexTable = 1; indexTable <= 10; indexTable++) {
-    for (let index = 1; index <= 10; index++) {
-      res += ` ${indexTable * index}`;
-    }
-    res += "\n";
+function exo6() {
+  let res = 0;
+  for (let index = 1; index <= 10; index++) {
+    res += index;
   }
 
-  console.log(res.slice(1, res.length));
+  return res;
 }
-
