@@ -1,12 +1,18 @@
-console.log(exo18("20;10"));
+exo14(10);
 
-function exo18(strNotes) {
-  const notes = strNotes.split(";");
-  let allNotes = 0;
-  for (let index = 0; index < notes.length; index++) {
-    const note = parseInt(notes[index]);
-    allNotes += note;
+/**
+ * @description get fibonacci suite start 0 to limit parameter
+ * @param {number} limit limit number to search
+ * @returns {string} fibonacci suite
+ */
+function exo14(limit = 10) {
+  let fibonacci = [];
+  for (let index = 0; index <= limit; index++) {
+    if (index < 2) fibonacci.push(index);
+    else {
+      fibonacci.push(fibonacci[index - 1] + fibonacci[index - 2]);
+    }
   }
 
-  return allNotes / notes.length;
+  console.log(fibonacci.join(" "));
 }
