@@ -1,16 +1,18 @@
-console.log(exo16([1, 2, 3, 4, 8]));
+console.log(exo17("§!@#$%*()test_-=+{}[]|<>?/.,;"));
 
-/**
- *
- * @param {Array<number>} t
- */
-function exo16(t) {
-  const firstItem = t[0];
-  const endItem = t[t.length - 1];
-  const newTable = t;
-  newTable.shift();
-  newTable.pop();
-  newTable.unshift(endItem);
-  newTable.push(firstItem);
-  return newTable;
+function exo17(str) {
+  let count = 0;
+  const SPECIALS_WORDS = "§!@#$%*()_-=+{}[]|<>?/.,;";
+  for (let index = 0; index < str.length; index++) {
+    const key = str[index];
+    for (
+      let indexSpecialWord = 0;
+      indexSpecialWord < SPECIALS_WORDS.length;
+      indexSpecialWord++
+    ) {
+      const SPECIAL_WORD = SPECIALS_WORDS[indexSpecialWord];
+      if (key === SPECIAL_WORD) count++;
+    }
+  }
+  return count;
 }
