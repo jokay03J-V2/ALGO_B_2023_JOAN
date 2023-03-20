@@ -6,9 +6,7 @@ function exo5() {
     for (let index = 1; index <= 10; index++) {
       res += ` ${indexTable * index}`;
     }
-    res += "\n";
+    console.log(res.slice(1, res.length));
+    res = "";
   }
-
-  console.log(res.slice(1, res.length));
 }
-
