@@ -1,9 +1,4 @@
-console.log(exo8());
-function exo8() {
-  let res = 0;
-  for (let index = 10; index <= 30; index++) {
-    if (index % 2 === 0) res += index;
-  }
-
-  return res;
+console.log(exo9(30));
+function exo9(celsius) {
+  return (celsius * 9) / 5 + 32;
 }
