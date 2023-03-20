@@ -1,11 +1,11 @@
-exo1();
+exo2();
 
-function exo1() {
+function exo2() {
   let res = "";
   for (let index = 1; index <= 10; index++) {
-    res += index;
+    res += ` ${index}`;
   }
 
-  console.log(res);
+  console.log(res.slice(1, res.length));
 }
 
