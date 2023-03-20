@@ -1,4 +1,9 @@
-console.log(exo9(30));
-function exo9(celsius) {
-  return (celsius * 9) / 5 + 32;
+console.log(exo10([1, 3]));
+function exo10(t) {
+  let res = 0;
+  for (let index = 0; index < t.length; index++) {
+    const number = t[index];
+    res += number;
+  }
+  return res;
 }
