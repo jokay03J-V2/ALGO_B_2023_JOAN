@@ -1,11 +1,9 @@
-exo3();
+exo4();
 
-function exo3() {
+function exo4() {
   let res = "";
-  for (let index = 1; index <= 100; index++) {
-    if (index % 2 !== 0) {
-      res += ` ${index}`;
-    }
+  for (let index = 1; index <= 10; index++) {
+    res += ` ${index * 7}`;
   }
 
   console.log(res.slice(1, res.length));
