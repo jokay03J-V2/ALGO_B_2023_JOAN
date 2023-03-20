@@ -4,7 +4,7 @@ function exo18(strNotes) {
   const notes = strNotes.split(";");
   let allNotes = 0;
   for (let index = 0; index < notes.length; index++) {
-    const note = parseInt(notes[index]);
+    const note = parseInt(notes[index], 10);
     allNotes += note;
   }
 
