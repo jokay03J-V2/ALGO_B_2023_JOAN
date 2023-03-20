@@ -1,12 +1,9 @@
-exo5();
-
-function exo5() {
-  let res = "";
-  for (let indexTable = 1; indexTable <= 10; indexTable++) {
-    for (let index = 1; index <= 10; index++) {
-      res += ` ${indexTable * index}`;
-    }
-    console.log(res.slice(1, res.length));
-    res = "";
+console.log(exo8());
+function exo8() {
+  let res = 0;
+  for (let index = 10; index <= 30; index++) {
+    if (index % 2 === 0) res += index;
   }
+
+  return res;
 }
