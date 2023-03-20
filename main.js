@@ -1,6 +1,6 @@
-exo2();
+exo3();
 
-function exo2() {
+function exo3() {
   let res = "";
   for (let index = 1; index <= 100; index++) {
     if (index % 2 !== 0) {
